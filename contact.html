@@ -20,18 +20,26 @@
   </header>
 
   <main>
-    <h2>Contact Us</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input id="name" type="text" required />
+    <section class="contact-intro">
+      <h2>Let’s Connect! 🍽️</h2>
+      <p>We’d love to hear from you! Whether it’s feedback, questions, or just to say hi, drop us a note below.</p>
+    </section>
 
-      <label for="email">Email:</label>
-      <input id="email" type="email" required />
+    <div class="contact-image">
+      <img src="images/people.jpg" alt="Friends eating healthy and talking happily" />
+    </div>
 
-      <label for="message">Message:</label>
-      <textarea id="message" required></textarea>
+    <form class="contact-form">
+      <label for="name">👤 Name:</label>
+      <input id="name" type="text" placeholder="Your full name" required />
 
-      <button type="submit">Send</button>
+      <label for="email">📧 Email:</label>
+      <input id="email" type="email" placeholder="you@example.com" required />
+
+      <label for="message">💬 Message:</label>
+      <textarea id="message" placeholder="Tell us what’s on your mind..." required></textarea>
+
+      <button type="submit">Send Message ✉️</button>
     </form>
   </main>
 
