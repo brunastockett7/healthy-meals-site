@@ -54,16 +54,6 @@ function displayMeals(list) {
   });
 }
 
-// Filter high-protein meals (> 25g)
-function filterHighProtein() {
-  const mealsList = JSON.parse(localStorage.getItem("meals")) || [];
-  const highProteinMeals = mealsList.filter(m => m.protein > 25);
-  displayMeals(highProteinMeals);
-}
-
 // Load and display all meals on page load
 const savedMeals = JSON.parse(localStorage.getItem("meals")) || [];
 displayMeals(savedMeals);
-
-// Optionally, trigger filtering to show only high-protein meals
-filterHighProtein(); // Call this if you want to display only high-protein meals on page load
