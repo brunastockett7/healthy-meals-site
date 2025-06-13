@@ -22,13 +22,38 @@
   <main>
     <h2>Our Favorite Healthy Meals</h2>
     <button onclick="filterHighProtein()">Show High Protein Meals</button>
-    <div id="meal-list"></div>
+
+    <section id="meal-list">
+      <div class="meal-card" data-protein="high">
+        <img src="images/chicken-veggies.jpg" alt="Chicken and Veggies">
+        <h3>Grilled Chicken & Veggies</h3>
+        <p>High-protein, low-carb meal.</p>
+      </div>
+
+      <div class="meal-card" data-protein="low">
+        <img src="images/oatmeal-bowl.jpg" alt="Oatmeal Bowl">
+        <h3>Oatmeal Bowl</h3>
+        <p>Great for breakfast energy.</p>
+      </div>
+
+      <div class="meal-card" data-protein="high">
+        <img src="images/salmon.jpg" alt="Grilled Salmon">
+        <h3>Grilled Salmon</h3>
+        <p>Omega-3 packed, high in protein.</p>
+      </div>
+
+      <div class="meal-card" data-protein="low">
+        <img src="images/fruit-smoothie.jpg" alt="Fruit Smoothie">
+        <h3>Fruit Smoothie</h3>
+        <p>Refreshing and naturally sweet.</p>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Healthy Meals | <a href="references.html">References</a></p>
   </footer>
 
-  <script src="js/scripts.js"></script>
+  <script src="scripts/meals.js"></script>
 </body>
 </html>

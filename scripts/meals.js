@@ -1,3 +1,4 @@
+// Meal data
 const meals = [
   {
     name: "Grilled Chicken Veggies",
@@ -26,8 +27,10 @@ const meals = [
   }
 ];
 
+// Save to localStorage
 localStorage.setItem("meals", JSON.stringify(meals));
 
+// Display all meals
 function displayMeals(list) {
   const container = document.getElementById("meal-list");
   container.innerHTML = "";
@@ -44,11 +47,13 @@ function displayMeals(list) {
   });
 }
 
+// Filter high-protein meals (> 25g)
 function filterHighProtein() {
   const meals = JSON.parse(localStorage.getItem("meals")) || [];
   const highProteinMeals = meals.filter(m => m.protein > 25);
   displayMeals(highProteinMeals);
 }
 
-const savedMeals = JSON.parse(localStorage.getItem("meals"));
+// Load and display all meals on page load
+const savedMeals = JSON.parse(localStorage.getItem("meals")) || [];
 displayMeals(savedMeals);
