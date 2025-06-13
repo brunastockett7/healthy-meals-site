@@ -39,18 +39,39 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
+  position: relative;
   text-align: center;
   margin-bottom: 2rem;
-  position: relative;
 }
+
 .hero img {
   width: 100%;
-  max-height: 300px; /* reduce the banner height */
+  max-height: 320px; /* Balanced height */
   height: auto;
+  object-fit: cover;
   display: block;
-  object-fit: cover; /* keep it full without stretching */
-  border-radius: 0;
+  margin: 0 auto;
 }
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2rem;
+  color: #4A3F35;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding: 2rem;
+}
+
 /* Intro Section */
 .intro {
   text-align: center;
