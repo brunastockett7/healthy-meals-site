@@ -300,3 +300,18 @@ footer {
 .cta .button:hover {
   background-color: #e08a2e;
 }
+.contact-image img {
+  max-width: 80%; /* Use a reasonable size for larger screens */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto; /* Centers the image */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .contact-image img {
+    max-width: 90%; /* Make it slightly larger on mobile */
+  }
+}

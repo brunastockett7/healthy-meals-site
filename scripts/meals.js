@@ -1,4 +1,4 @@
-// Meal data
+/* eslint-env browser */
 const meals = [
   {
     name: "Grilled Chicken Veggies",
