@@ -254,3 +254,49 @@ footer {
 .contact-form button:hover {
   background-color: #e08a2e;
 }
+.quick-tips {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  gap: 1rem;
+}
+
+.tip {
+  background-color: #F5EDE1;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.mission blockquote {
+  font-style: italic;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 800px;
+  font-size: 1.2rem;
+  color: #4A3F35;
+}
+
+.cta {
+  text-align: center;
+  margin: 2rem;
+}
+
+.cta .button {
+  background-color: #FBC195;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta .button:hover {
+  background-color: #e08a2e;
+}
