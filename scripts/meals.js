@@ -54,6 +54,26 @@ function displayMeals(list) {
   });
 }
 
+// Filter high-protein meals (> 25g)
+function filterHighProtein() {
+  const mealsList = JSON.parse(localStorage.getItem("meals")) || [];
+  return mealsList.filter(m => m.protein > 25);
+}
+
+// Event listener for the "Filter Protein Meals" button
+let showingHighProtein = false; // Track if we're showing high-protein meals
+document.getElementById("filter-protein-btn").addEventListener("click", function() {
+  if (showingHighProtein) {
+    displayMeals(meals); // Show all meals
+    this.textContent = "Filter Protein Meals"; // Update button text
+  } else {
+    const highProteinMeals = filterHighProtein(); // Filter high-protein meals
+    displayMeals(highProteinMeals); // Show only high-protein meals
+    this.textContent = "Show All Meals"; // Update button text
+  }
+  showingHighProtein = !showingHighProtein; // Toggle the state
+});
+
 // Load and display all meals on page load
 const savedMeals = JSON.parse(localStorage.getItem("meals")) || [];
 displayMeals(savedMeals);
