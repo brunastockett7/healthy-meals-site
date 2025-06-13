@@ -3,14 +3,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #F5EDE1; /* light warm brown */
+  color: #4A3F35; /* earthy text */
   line-height: 1.6;
-  background-color: #FAF3E0; /* light neutral background */
-  color: #333333; /* dark text for readability */
 }
 
 /* Header & Navigation */
 header {
-  background-color: #4CAF50; /* leafy green */
+  background-color: #88B04B; /* sage green */
   color: white;
   padding: 1rem 0;
   text-align: center;
@@ -41,30 +41,26 @@ nav a:hover {
 .hero {
   text-align: center;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .hero img {
   width: 100%;
   max-height: 500px;
   object-fit: cover;
+  display: block;
 }
 
-.hero h2 {
-  margin-top: 1rem;
-  color: #F44336; /* tomato red */
-}
-
-/* Intro Section */
+/* Intro */
 .intro {
-  padding: 2rem;
   text-align: center;
+  padding: 2rem;
 }
 
 .intro img {
   margin-top: 1rem;
   width: 80%;
   max-width: 800px;
-  height: auto;
   border-radius: 10px;
 }
 
@@ -89,23 +85,22 @@ nav a:hover {
 
 .meal-card img {
   width: 100%;
-  height: auto;
   border-radius: 6px;
 }
 
 .meal-card h3 {
-  color: #4CAF50; /* green */
+  color: #88B04B; /* sage green */
   margin-top: 0.5rem;
 }
 
 .meal-card p {
   font-weight: bold;
-  color: #FF9800; /* soft orange */
+  color: #FFA94D; /* soft orange */
 }
 
 /* Buttons */
 button {
-  background-color: #FF9800; /* soft orange */
+  background-color: #FFA94D; /* orange */
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -117,12 +112,12 @@ button {
 }
 
 button:hover {
-  background-color: #e68900;
+  background-color: #e08a2e;
 }
 
 /* Footer */
 footer {
-  background-color: #4CAF50;
+  background-color: #B85C38; /* clay red-brown */
   color: white;
   text-align: center;
   padding: 1rem;
