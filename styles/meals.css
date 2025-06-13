@@ -315,3 +315,11 @@ footer {
     max-width: 90%; /* Make it slightly larger on mobile */
   }
 }
+/* Intro Section */
+.intro img {
+  max-width: 500px;  /* Limit max width */
+  height: auto;      /* Maintain aspect ratio */
+  border-radius: 10px;
+  display: block;
+  margin: 1rem auto;  /* Center the image */
+}
