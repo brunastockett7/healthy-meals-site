@@ -3,14 +3,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F5EDE1; /* light warm brown */
-  color: #4A3F35; /* earthy text */
+  background-color: #F5EDE1; /* pastel brown */
+  color: #4A3F35; /* deep brown text */
   line-height: 1.6;
 }
 
 /* Header & Navigation */
 header {
-  background-color: #88B04B; /* sage green */
+  background-color: #FFA94D; /* soft orange */
   color: white;
   padding: 1rem 0;
   text-align: center;
@@ -51,20 +51,21 @@ nav a:hover {
   display: block;
 }
 
-/* Intro */
+/* Intro Section */
 .intro {
   text-align: center;
   padding: 2rem;
 }
 
 .intro img {
-  margin-top: 1rem;
-  width: 80%;
-  max-width: 800px;
+  max-width: 600px;
+  height: auto;
   border-radius: 10px;
+  display: block;
+  margin: 1rem auto;
 }
 
-/* Meal Cards */
+/* Meal Cards Section */
 #meal-list {
   display: flex;
   flex-wrap: wrap;
@@ -85,22 +86,23 @@ nav a:hover {
 
 .meal-card img {
   width: 100%;
+  height: auto;
   border-radius: 6px;
 }
 
 .meal-card h3 {
-  color: #88B04B; /* sage green */
+  color: #FFA94D; /* soft orange */
   margin-top: 0.5rem;
 }
 
 .meal-card p {
   font-weight: bold;
-  color: #FFA94D; /* soft orange */
+  color: #4A3F35;
 }
 
 /* Buttons */
 button {
-  background-color: #FFA94D; /* orange */
+  background-color: #FFA94D; /* soft orange */
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -117,7 +119,7 @@ button:hover {
 
 /* Footer */
 footer {
-  background-color: #B85C38; /* clay red-brown */
+  background-color: #FFA94D;
   color: white;
   text-align: center;
   padding: 1rem;
